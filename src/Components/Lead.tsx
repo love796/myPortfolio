@@ -13,7 +13,7 @@ export default class Lead extends React.Component {
 
 	info = Info;
 
-	bg = { background: "url('images/lead-bg.jpg')" };
+	bg = { background: "url('images/lead-bg.jpg')", "background-size": "cover" };
 
 	scrollDown() {
 		this.ref.current?.scrollIntoView({ behavior: "smooth" });
