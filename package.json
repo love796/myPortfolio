@@ -6,6 +6,7 @@
 		"name": "Lovepreet Thind",
 		"email": "slovepreet796@gmail.com"
 	},
+	"homepage": "./",
 	"displayName": "Love",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.32",
