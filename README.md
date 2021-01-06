@@ -1,3 +1,3 @@
 # My Portfoilio
 
-Template used [here] (https://github.com/RyanFitzgerald/devportfolio)
+Template used [here](https://github.com/RyanFitzgerald/devportfolio)
