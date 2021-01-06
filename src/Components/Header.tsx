@@ -1,6 +1,7 @@
 import React from "react";
 import { LinksArr } from "../Data";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 export default class Header extends React.Component {
 	headerRef: React.RefObject<HTMLElement>;
 	linksArr = LinksArr;
@@ -14,7 +15,7 @@ export default class Header extends React.Component {
 		return (
 			<>
 				<div id="mobile-menu-open" className="shadow-large" onClick={this.toggleMobileMenu}>
-					<i className="fa fa-bars" aria-hidden="true"></i>
+					<FontAwesomeIcon icon={faBars} />
 				</div>
 				<header ref={this.headerRef}>
 					<div id="mobile-menu-close" onClick={this.toggleMobileMenu}>
