@@ -808,4 +808,16 @@ footer {
 		font-size: 0.9em;
 		padding: 5px 10px;
 	}
+	#experience-timeline:before,
+	#experience-timeline:after,
+	.vtimeline-icon {
+		display: none;
+	}
+	.vtimeline-content {
+		margin-left: 0;
+	}
+	.vtimeline-date {
+		margin-left: 0;
+		text-align: center;
+	}
 }
