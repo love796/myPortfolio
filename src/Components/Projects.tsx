@@ -20,7 +20,11 @@ const Projects = () => {
 										<strong>Assigned Role: </strong>
 										{proj.role}
 									</p>
-									{proj.link && <a href={proj.link}>View Project</a>}
+									{proj.link && (
+										<a href={proj.link} target="_blank" rel="noreferrer">
+											View Project
+										</a>
+									)}
 								</div>
 							</div>
 						);

@@ -17,7 +17,6 @@ export default class Education extends React.Component {
 									<h4>{e.degree}</h4>
 									<p>{e.description}</p>
 								</div>
-								{index !== this.etList.length - 1 && <span className="arrow-educ"></span>}
 							</div>
 						);
 					})}

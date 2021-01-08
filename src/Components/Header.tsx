@@ -2,6 +2,7 @@ import React from "react";
 import { LinksArr } from "../Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 export default class Header extends React.Component {
 	headerRef: React.RefObject<HTMLElement>;
 	linksArr = LinksArr;

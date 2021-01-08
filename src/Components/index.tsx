@@ -6,7 +6,6 @@ import Experience from "./Experience";
 import Education from "./Education";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Contact from "./Contact";
 import Footer from "./Footer";
 
 export default class Components extends React.Component {
@@ -15,12 +14,11 @@ export default class Components extends React.Component {
 			<>
 				<Header />
 				<Lead />
+				<About />
 				<Experience />
 				<Education />
 				<Projects />
 				<Skills />
-				<About />
-				<Contact />
 				<Footer />
 			</>
 		);
