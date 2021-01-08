@@ -26,7 +26,7 @@ export default class Lead extends React.Component {
 					<div id="lead-content">
 						<h1>{this.info.name}</h1>
 						<h2>{this.info.occupation}</h2>
-						<a href="#about" className="btn-rounded-white">
+						<a href={this.info.resume} target="_blank" rel="noreferrer" className="btn-rounded-white">
 							Download Resume
 						</a>
 					</div>

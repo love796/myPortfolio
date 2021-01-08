@@ -1,13 +1,18 @@
 //Header links
-export const LinksArr: String[] = ["experience", "education", "projects", "skills", "about", "contact"];
+export const LinksArr: String[] = ["about", "experience", "education", "projects", "skills", "contact"];
 
 //User Info
 export const Info = {
 	name: "Lovepreet Thind",
 	occupation: "Software Engineer",
-	image: "",
+	image: "images/love.jpg",
 	summary:
-		"An enthusiastic fresher with highly motivated learning skill having a Bachelor of Engineering degree in Computer Science and Engineering. Eager to learn new technologies and methodologies. Always willing to innovate the new things which can improve the existing technology.",
+		"An enthusiastic fresher with highly motivated learning and problem-solving skills having a Bachelor of Engineering degree in Computer Science and Engineering. Eager to learn new technologies and methodologies. Always willing to innovate new things that can improve the existing technology. Foreseeing a career in Front End Development. Love using different technologies for the tasks. Always keen to learn new technology and adapt to different environments.",
+	resume: "https://drive.google.com/file/d/19OquP_ZGM_lM-E_Z_X20vDUYgON73HOZ/view?usp=sharing",
+	phone: "9855941774",
+	email: "slovepreet796@gmail.com",
+	website: "lovepreet.ml",
+	location: "Punjab, India",
 };
 
 //Experience section
@@ -22,7 +27,7 @@ export const Exp = [
 	},
 	{
 		date: "July 2018 – December 2018",
-		name: "AURIBISES",
+		name: "Auribises",
 		title: "WEB DEVELOPMENT INTERN",
 		link: "https://auribises.com/",
 		description:
@@ -71,14 +76,14 @@ export const Proj = [
 		description:
 			"Online room-based chat application using PHP, MySQL and Ajax. Introduces database and server concepts. Simple database based authencation and message fetching using Ajax. Full responsive design created using Bootstrap framework.",
 		role: "Application Developer",
-		link: "#",
+		link: "https://github.com/love796/GamersWorld",
 	},
 	{
 		name: "Stock Prediction",
 		description:
 			"Stock Prediction using machine learning. Not very accurate but introduces concepts of regression and its uses. Basic machine learning approach for data prediction. Used linear regression concept. Buld using Python libraries (scikit learn).",
 		role: "Application Developer",
-		link: "#",
+		link: "https://github.com/love796/Stock-Leader",
 	},
 	{
 		name: "MEO",
