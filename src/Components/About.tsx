@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { Info } from "../Data";
-import Social from "./Social";
+import { MyInfo } from "../Data";
+import Social from "./Sub-Components/Social";
 
 const About = () => {
-	const info = Info;
+	const info = MyInfo;
 
 	return (
 		<div id="about">
@@ -16,11 +16,11 @@ const About = () => {
 				</Row>
 				<Row className="about-card">
 					<Col lg={4} className="about-image">
-						<Image src={info.image} roundedCircle alt="My image" />
+						<Image src={info.image.toString()} roundedCircle alt="My image" />
 						<Social></Social>
 					</Col>
 					<Col lg={8} className="about-text">
-						<p dangerouslySetInnerHTML={{ __html: info.summary }}></p>
+						<p dangerouslySetInnerHTML={{ __html: info.summary.toString() }}></p>
 					</Col>
 				</Row>
 			</Container>

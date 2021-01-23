@@ -1,20 +1,20 @@
 import React from "react";
-import { Educ } from "../Data";
+import { EducationList } from "../Data";
 
 const Education = () => {
-	const etList = Educ;
+	const edList = EducationList;
 	return (
 		<>
 			<div id="education">
 				<h2 className="heading">Education</h2>
-				{etList.map((e, index) => {
+				{edList.map((education, index) => {
 					return (
 						<div key={index}>
 							<div className="education-block">
-								<h3>{e.universityName}</h3>
-								<span>{e.period}</span>
-								<h4>{e.degree}</h4>
-								<p>{e.description}</p>
+								<h3>{education.universityName}</h3>
+								<span>{education.period}</span>
+								<h4>{education.degree}</h4>
+								<p>{education.description}</p>
 							</div>
 						</div>
 					);

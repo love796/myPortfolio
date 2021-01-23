@@ -1,16 +1,12 @@
 import React from "react";
-import { Info } from "../Data";
+import { MyInfo } from "../Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Lead = () => {
-	const info = Info;
-
+	const info = MyInfo;
 	const bgImage = { background: "url('images/lead-bg.jpg')", backgroundSize: "cover" };
-
-	const scrollDown = () => {
-		document.getElementById("next")?.scrollIntoView();
-	};
+	const scrollDown = () => document.getElementById("next")?.scrollIntoView();
 
 	return (
 		<>
@@ -18,7 +14,7 @@ const Lead = () => {
 				<div id="lead-content">
 					<h1>{info.name}</h1>
 					<h2>{info.occupation}</h2>
-					<a href={info.resume} target="_blank" rel="noreferrer" className="btn-rounded-white">
+					<a href={info.resume.toString()} target="_blank" rel="noreferrer" className="btn-rounded-white">
 						Download Resume
 					</a>
 				</div>

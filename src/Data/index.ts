@@ -2,7 +2,7 @@
 export const LinksArr: String[] = ["about", "experience", "education", "projects", "skills", "contact"];
 
 //User Info
-export const Info = {
+export const MyInfo: Info = {
 	name: "Lovepreet Thind",
 	occupation: "Software Engineer",
 	image: "images/love.jpg",
@@ -16,7 +16,7 @@ export const Info = {
 };
 
 //Experience section
-export const Exp = [
+export const ExperienceList: Experience[] = [
 	{
 		date: "September 2019 – PRESENT",
 		name: "Accenture",
@@ -36,7 +36,7 @@ export const Exp = [
 ];
 
 //Education section
-export const Educ = [
+export const EducationList: Education[] = [
 	{
 		universityName: "GURU NANAK DEV ENGINEERING COLLEGE",
 		period: "August 2015 - May 2019",
@@ -58,19 +58,19 @@ export const Educ = [
 ];
 
 //Skills
-export const SkillsArr = [
-	{ skill: "Javascript", value: 60 },
-	{ skill: "Typescript", value: 40 },
-	{ skill: "Angular", value: 30 },
-	{ skill: "React", value: 40 },
-	{ skill: "Python", value: 50 },
-	{ skill: "Java", value: 30 },
-	{ skill: "HTML", value: 70 },
-	{ skill: "CSS", value: 70 },
+export const SkillsList: Skill[] = [
+	{ name: "Javascript", value: 60 },
+	{ name: "Typescript", value: 40 },
+	{ name: "React", value: 40 },
+	{ name: "Angular", value: 30 },
+	{ name: "Python", value: 50 },
+	{ name: "Java", value: 30 },
+	{ name: "HTML", value: 70 },
+	{ name: "CSS", value: 70 },
 ];
 
 //Projects section
-export const Proj = [
+export const ProjectsList: Project[] = [
 	{
 		name: "Chat Application",
 		description:

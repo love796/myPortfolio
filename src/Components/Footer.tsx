@@ -1,9 +1,9 @@
 import React from "react";
-import { Info } from "../Data";
+import { MyInfo } from "../Data";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
-	const info = Info;
+	const info = MyInfo;
 	return (
 		<footer id="contact" className="optional-section">
 			<Container>
@@ -18,7 +18,7 @@ const Footer = () => {
 						</ul>
 					</Col>
 					<Col sm={3}>
-						<p>Copyright &copy; 2020 {Info.name}</p>
+						<p>Copyright &copy; 2020 {info.name}</p>
 					</Col>
 				</Row>
 			</Container>

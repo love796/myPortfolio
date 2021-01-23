@@ -1,28 +1,10 @@
 import React from "react";
-import { SkillsArr } from "../Data";
-import { Popover, OverlayTrigger, ProgressBar } from "react-bootstrap";
-
-type Skill = {
-	skill: String;
-	value: number;
-};
+import { SkillsList } from "../Data";
+import SkillPopover from "./Sub-Components/skill-popover";
+import { OverlayTrigger } from "react-bootstrap";
 
 const Skills = () => {
-	const skills = SkillsArr;
-
-	const popover = (p: Skill) => {
-		const style = { width: "200px" };
-		return (
-			<Popover id="popover-basic">
-				<Popover.Title as="h3" className="text-center">
-					{p.skill}
-				</Popover.Title>
-				<Popover.Content style={style}>
-					<ProgressBar animated now={p.value} />
-				</Popover.Content>
-			</Popover>
-		);
-	};
+	const skills = SkillsList;
 
 	return (
 		<div id="skills">
@@ -30,8 +12,8 @@ const Skills = () => {
 			<ul>
 				{skills.map((skill, index) => {
 					return (
-						<OverlayTrigger key={index} placement="top" overlay={popover(skill)}>
-							<li>{skill.skill}</li>
+						<OverlayTrigger key={index} placement="top" overlay={SkillPopover(skill)}>
+							<li>{skill.name}</li>
 						</OverlayTrigger>
 					);
 				})}
