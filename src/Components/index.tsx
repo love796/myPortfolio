@@ -8,19 +8,19 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Footer from "./Footer";
 
-export default class Components extends React.Component {
-	render() {
-		return (
-			<>
-				<Header />
-				<Lead />
-				<About />
-				<Experience />
-				<Education />
-				<Projects />
-				<Skills />
-				<Footer />
-			</>
-		);
-	}
-}
+const Components = () => {
+	return (
+		<>
+			<Header />
+			<Lead />
+			<About />
+			<Experience />
+			<Education />
+			<Projects />
+			<Skills />
+			<Footer />
+		</>
+	);
+};
+
+export default Components;
