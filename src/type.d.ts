@@ -34,5 +34,5 @@ type Project = {
 	name: String;
 	description: String;
 	role: String;
-	link: String;
+	link?: String;
 };
