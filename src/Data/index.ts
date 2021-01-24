@@ -90,13 +90,11 @@ export const ProjectsList: Project[] = [
 		description:
 			" Meo is a web application that provides admin control panel for a architect and real estate based company. It provide management for various jobs, employees and other stuff handled by company. It is build Firebase platform for storage, hosting and database activities.",
 		role: "Full stack Developer",
-		link: "",
 	},
 	{
 		name: "Learning Management System",
 		description:
 			"Online learning management system providing webinars on various courses offered by Auribises. It was build using AngularJs framework for frontend and Firebase platform for serverless backend support with integrited Paytm payment gateway.",
 		role: "Full stack Developer",
-		link: "",
 	},
 ];
