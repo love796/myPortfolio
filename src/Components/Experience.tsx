@@ -1,15 +1,14 @@
 import React from "react";
-import { ExperienceList } from "../Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Experience = () => {
-	const xpList = ExperienceList;
+const Experience = (props: { experienceList: Experience[] }) => {
+	const experienceList = props.experienceList;
 
 	return (
 		<div id="experience" className="background-alt">
 			<h2 className="heading">Experience</h2>
-			<div id="experience-timeline">{xpList.map((experience, index) => listItem(experience, index))}</div>
+			<div id="experience-timeline">{experienceList.map((experience, index) => listItem(experience, index))}</div>
 		</div>
 	);
 };

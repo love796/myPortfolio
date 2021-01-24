@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { ProjectsList } from "../Data";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-const Projects = () => {
+const Projects = (props: { projectList: Project[] }) => {
 	const num = 2;
-	const [projectList, setProjectList] = useState(ProjectsList.slice(0, num));
+	const [projectList, setProjectList] = useState(props.projectList.slice(0, num));
 	return (
 		<div id="projects" className="background-alt">
 			<h2 className="heading">Projects</h2>
@@ -12,8 +11,8 @@ const Projects = () => {
 				<Row>
 					{projectList.map((project, index) => listItem(project, index))}
 					<Col>
-						{projectList.length < num + 1 && ProjectsList.length > num && (
-							<Button variant="primary" className="more-projects" onClick={() => setProjectList(ProjectsList)}>
+						{projectList.length < num + 1 && props.projectList.length > num && (
+							<Button variant="primary" className="more-projects" onClick={() => setProjectList(props.projectList)}>
 								More Projects
 							</Button>
 						)}

@@ -1,8 +1,7 @@
 import React from "react";
-import { EducationList } from "../Data";
 
-const Education = () => {
-	const edList = EducationList;
+const Education = (props: { educationList: Education[] }) => {
+	const edList = props.educationList;
 	return (
 		<>
 			<div id="education">

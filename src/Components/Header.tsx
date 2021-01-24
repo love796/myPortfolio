@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { LinksArr } from "../Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
-	const linksArr = LinksArr;
+const Header = (props: { linksArr: String[] }) => {
+	const linksArr = props.linksArr;
 	const [isBodyActive, setIsBodyActive] = useState(false);
 	const toggleMenu = () => setIsBodyActive(!isBodyActive);
 

@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { MyInfo } from "../Data";
 import Social from "./Sub-Components/Social";
 
-const About = () => {
-	const info = MyInfo;
+const About = (props: { myInfo: Info }) => {
+	const info = props.myInfo;
 
 	return (
 		<div id="about">
