@@ -14,7 +14,7 @@ const Social = () => {
 						</a>
 					</li>
 					<li>
-						<a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+						<a href="https://linkedin.com/in/lovepreethind" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faLinkedinIn} />
 						</a>
 					</li>
