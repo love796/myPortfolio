@@ -57,19 +57,20 @@ header ul {
 header li {
 	display: inline-block;
 }
-header a {
+header span {
 	display: block;
 	color: #3498db;
 	padding: 10px;
 	text-transform: capitalize;
+	cursor: pointer;
 }
-header a:hover {
+header span:hover {
 	color: #217dbb;
 	text-decoration: none;
 	background: #eee;
 	border-radius: 4px;
 }
-header a:focus {
+header span:focus {
 	color: #3498db;
 	text-decoration: none;
 }
