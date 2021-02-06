@@ -1,5 +1,5 @@
 {
-	"name": "myportfolio",
+	"name": "portfolio",
 	"version": "0.1.0",
 	"private": true,
 	"author": {
@@ -7,7 +7,6 @@
 		"email": "slovepreet796@gmail.com"
 	},
 	"homepage": "./",
-	"displayName": "Love",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.32",
 		"@fortawesome/free-brands-svg-icons": "^5.15.1",
@@ -23,16 +22,19 @@
 		"react-scripts": "4.0.1",
 		"typescript": "^4.1.3"
 	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.11.1",
+		"@typescript-eslint/parser": "^4.11.1",
+		"eslint": "^7.16.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"prettier": "^2.2.1"
+	},
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app"
-		]
+		"lint": "eslint '*/**/*.{js,ts,tsx}' --quiet"
 	},
 	"browserslist": {
 		"production": [
