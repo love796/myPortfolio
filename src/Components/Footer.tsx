@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Footer = (props: { myInfo: Info }) => {
+type Props = { myInfo: Info };
+
+const Footer: React.FC<Props> = (props: Props) => {
 	const myInfo = props.myInfo;
 	return (
 		<footer id="contact" className="optional-section">

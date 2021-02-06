@@ -2,7 +2,9 @@ import React from "react";
 import SkillPopover from "./Sub-Components/skill-popover";
 import { OverlayTrigger } from "react-bootstrap";
 
-const Skills = (props: { skillsList: Skill[] }) => {
+type Props = { skillsList: Skill[] };
+
+const Skills: React.FC<Props> = (props: Props) => {
 	const skills = props.skillsList;
 
 	return (

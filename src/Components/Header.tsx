@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const Header = (props: { linksArr: String[] }) => {
+type Props = { linksArr: String[] };
+
+const Header: React.FC<Props> = (props: Props) => {
 	const linksArr = props.linksArr;
 	const [isBodyActive, setIsBodyActive] = useState(false);
 	const toggleMenu = () => setIsBodyActive(!isBodyActive);
+	const scrollToSection = (link: String) => {
+		document.getElementById(link.toString())?.scrollIntoView();
+		toggleMenu();
+	};
 
 	return (
 		<>
@@ -20,9 +26,7 @@ const Header = (props: { linksArr: String[] }) => {
 					{linksArr.map((link, index) => {
 						return (
 							<li key={index}>
-								<a href={"#" + link} onClick={toggleMenu}>
-									{link}
-								</a>
+								<span onClick={() => scrollToSection(link)}>{link}</span>
 							</li>
 						);
 					})}

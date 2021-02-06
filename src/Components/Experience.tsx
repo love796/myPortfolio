@@ -2,7 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Experience = (props: { experienceList: Experience[] }) => {
+type Props = { experienceList: Experience[] };
+
+const Experience: React.FC<Props> = (props: Props) => {
 	const experienceList = props.experienceList;
 
 	return (

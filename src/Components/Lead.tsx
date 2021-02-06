@@ -2,7 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const Lead = (props: { myInfo: Info }) => {
+type Props = { myInfo: Info };
+
+const Lead: React.FC<Props> = (props: Props) => {
 	const info = props.myInfo;
 	const bgImage = { background: "url('images/lead-bg.jpg')", backgroundSize: "cover" };
 	const scrollDown = () => document.getElementById("next")?.scrollIntoView();

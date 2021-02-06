@@ -1,7 +1,9 @@
 import React from "react";
 
-const Education = (props: { educationList: Education[] }) => {
-	const edList = props.educationList;
+type Props = { educationList: Education[] };
+
+const Education: React.FC<Props> = ({ educationList }: Props) => {
+	const edList = educationList;
 	return (
 		<>
 			<div id="education">

@@ -9,7 +9,7 @@ import Skills from "./Skills";
 import Footer from "./Footer";
 import * as data from "../Data";
 
-const Components = () => {
+const Components: React.FC = () => {
 	return (
 		<>
 			<Header linksArr={data.LinksArr} />

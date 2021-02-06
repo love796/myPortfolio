@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Social from "./Sub-Components/Social";
 
-const About = (props: { myInfo: Info }) => {
+type Props = { myInfo: Info };
+
+const About: React.FC<Props> = (props: Props) => {
 	const info = props.myInfo;
 
 	return (
