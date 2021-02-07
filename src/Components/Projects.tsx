@@ -17,7 +17,11 @@ const Projects: React.FC<Props> = (props: Props) => {
 					))}
 					<Col>
 						{projectList.length < num + 1 && props.projectList.length > num && (
-							<Button variant="primary" className="more-projects" onClick={() => setProjectList(props.projectList)}>
+							<Button
+								variant="primary"
+								className="more-projects"
+								onClick={() => setProjectList(props.projectList)}
+							>
 								More Projects
 							</Button>
 						)}

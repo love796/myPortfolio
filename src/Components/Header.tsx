@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-type Props = { linksArr: String[] };
+type Props = { linksArr: string[] };
 
 const Header: React.FC<Props> = (props: Props) => {
 	const linksArr = props.linksArr;
 	const [isBodyActive, setIsBodyActive] = useState(false);
 	const toggleMenu = () => setIsBodyActive(!isBodyActive);
-	const scrollToSection = (link: String) => {
-		document.getElementById(link.toString())?.scrollIntoView();
+	const scrollToSection = (link: string) => {
+		document.getElementById(link)?.scrollIntoView();
 		toggleMenu();
 	};
 

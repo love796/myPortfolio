@@ -14,7 +14,7 @@ const ListItem: React.FC<Props> = (props: Props) => {
 					{project.role}
 				</p>
 				{project.link && (
-					<a href={project.link.toString()} target="_blank" rel="noreferrer">
+					<a href={project.link} target="_blank" rel="noreferrer">
 						View Project
 					</a>
 				)}

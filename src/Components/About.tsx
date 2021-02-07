@@ -21,7 +21,7 @@ const About: React.FC<Props> = (props: Props) => {
 						<Social></Social>
 					</Col>
 					<Col lg={8} className="about-text">
-						<p dangerouslySetInnerHTML={{ __html: info.summary.toString() }}></p>
+						<p dangerouslySetInnerHTML={{ __html: info.summary }}></p>
 					</Col>
 				</Row>
 			</Container>

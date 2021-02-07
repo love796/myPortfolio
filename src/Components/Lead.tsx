@@ -15,7 +15,12 @@ const Lead: React.FC<Props> = (props: Props) => {
 				<div id="lead-content">
 					<h1>{info.name}</h1>
 					<h2>{info.occupation}</h2>
-					<a href={info.resume.toString()} target="_blank" rel="noreferrer" className="btn-rounded-white">
+					<a
+						href={info.resume}
+						target="_blank"
+						rel="noreferrer"
+						className="btn-rounded-white"
+					>
 						Download Resume
 					</a>
 				</div>
