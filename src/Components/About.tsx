@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import Social from "./Sub-Components/Social";
+import Social from "./sub-components/Social";
 
 type Props = { myInfo: Info };
 

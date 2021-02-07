@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import ListItem from "./Sub-Components/project-list";
+import ListItem from "./sub-components/project-list";
 
 type Props = { projectList: Project[] };
 

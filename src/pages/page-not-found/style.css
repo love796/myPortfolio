@@ -1,0 +1,17 @@
+.page-not-found {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.page-not-found div {
+	border: 2px solid rgb(0 0 0 / 8%);
+	height: 40vh;
+	width: 50vw;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

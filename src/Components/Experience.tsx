@@ -1,5 +1,5 @@
 import React from "react";
-import ListItem from "./Sub-Components/experience-list";
+import ListItem from "./sub-components/experience-list";
 
 type Props = { experienceList: Experience[] };
 
