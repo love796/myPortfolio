@@ -28,7 +28,7 @@ const Social: React.FC = () => {
 						</a>
 					</li>
 					<li>
-						<a href="https://twitter.com/" target="_blank" rel="noreferrer">
+						<a href="https://twitter.com/slove796" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faTwitter} />
 						</a>
 					</li>
