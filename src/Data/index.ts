@@ -1,5 +1,12 @@
 //Header links
-export const LinksArr: String[] = ["about", "experience", "education", "projects", "skills", "contact"];
+export const LinksArr: string[] = [
+	"about",
+	"experience",
+	"education",
+	"projects",
+	"skills",
+	"contact",
+];
 
 //User Info
 export const MyInfo: Info = {
@@ -41,7 +48,8 @@ export const EducationList: Education[] = [
 		universityName: "GURU NANAK DEV ENGINEERING COLLEGE",
 		period: "August 2015 - May 2019",
 		degree: "Bachelor of Technology in Computer Science",
-		description: "Completed my Computer Science degree with 8.12 SGPA. Did extremely well in all my lab works and projects.",
+		description:
+			"Completed my Computer Science degree with 8.12 SGPA. Did extremely well in all my lab works and projects.",
 	},
 	{
 		universityName: "DRV DAV CENTENARY PUBLIC SCHOOL",

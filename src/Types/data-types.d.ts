@@ -1,38 +1,38 @@
 type Info = {
-	name: String;
-	occupation: String;
-	image: String;
-	summary: String;
-	resume: String;
-	phone: String;
-	email: String;
-	website: String;
-	location: String;
+	name: string;
+	occupation: string;
+	image: string;
+	summary: string;
+	resume: string;
+	phone: string;
+	email: string;
+	website: string;
+	location: string;
 };
 
 type Experience = {
-	date: String;
-	name: String;
-	title: String;
-	link: String;
-	description: String;
+	date: string;
+	name: string;
+	title: string;
+	link: string;
+	description: string;
 };
 
 type Education = {
-	universityName: String;
-	period: String;
-	degree: String;
-	description: String;
+	universityName: string;
+	period: string;
+	degree: string;
+	description: string;
 };
 
 type Skill = {
-	name: String;
-	value: Number;
+	name: string;
+	value: number;
 };
 
 type Project = {
-	name: String;
-	description: String;
-	role: String;
-	link?: String;
+	name: string;
+	description: string;
+	role: string;
+	link?: string;
 };
