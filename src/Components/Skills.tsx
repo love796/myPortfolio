@@ -1,5 +1,5 @@
 import React from "react";
-import SkillPopover from "./sub-components/skill-popover";
+import SkillPopover from "./Sub-Components/skill-popover";
 import { OverlayTrigger } from "react-bootstrap";
 
 type Props = { skillsList: Skill[] };
