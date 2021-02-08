@@ -1,4 +1,3 @@
 # Routing configs for Netlify
-/			/
-/portfolio	/
-/* 			/404-page-not-found
+# Redirect all routes for react to handle
+/*    /index.html   200
