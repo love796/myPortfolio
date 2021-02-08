@@ -1,0 +1,4 @@
+# Routing configs for Netlify
+/			/
+/portfolio	/
+/* 			/404-page-not-found
