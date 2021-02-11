@@ -3,6 +3,7 @@
 		"target": "es5",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
+		"checkJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
 		"allowSyntheticDefaultImports": true,
@@ -16,9 +17,13 @@
 		"noEmit": true,
 		"jsx": "react-jsx",
 		"declaration": true,
-		"noUnusedLocals": true,
+		//"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"incremental": true
+		"incremental": true,
+		"pretty": true,
+		"removeComments": true,
+		"baseUrl": "./src",
+		"paths": { "component": ["/Components/Header"] }
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "build"]
