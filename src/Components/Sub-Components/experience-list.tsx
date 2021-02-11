@@ -4,7 +4,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 type Props = { experience: Experience };
 
-const ListItem: React.FC<Props> = (props: Props) => {
+const ListItem = (props: Props) => {
 	const experience = props.experience;
 	return (
 		<>

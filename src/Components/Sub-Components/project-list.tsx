@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = { project: Project };
 
-const ListItem: React.FC<Props> = (props: Props) => {
+const ListItem = (props: Props) => {
 	const project = props.project;
 	return (
 		<div className="project shadow-large">

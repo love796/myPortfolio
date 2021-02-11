@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "./style.css";
 
-const PageNotFound: React.FC = () => {
+const PageNotFound = () => {
 	return (
 		<Container className="page-not-found">
 			<Row>

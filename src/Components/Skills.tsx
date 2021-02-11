@@ -4,11 +4,11 @@ import { OverlayTrigger } from "react-bootstrap";
 
 type Props = { skillsList: Skill[] };
 
-const Skills: React.FC<Props> = (props: Props) => {
+const Skills = (props: Props) => {
 	const skills = props.skillsList;
 
 	return (
-		<div id="skills">
+		<section id="skills">
 			<h2 className="heading">Skills</h2>
 			<ul>
 				{skills.map((skill, index) => {
@@ -19,7 +19,7 @@ const Skills: React.FC<Props> = (props: Props) => {
 					);
 				})}
 			</ul>
-		</div>
+		</section>
 	);
 };
 
