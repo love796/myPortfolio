@@ -9,7 +9,7 @@ body.active {
 	overflow: hidden;
 	z-index: -1;
 }
-@-webkit-keyframes dropHeader {
+@-webkit-keyframes dropnav {
 	0% {
 		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
@@ -19,7 +19,7 @@ body.active {
 		transform: translateY(0);
 	}
 }
-@keyframes dropHeader {
+@keyframes dropnav {
 	0% {
 		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
@@ -29,15 +29,15 @@ body.active {
 		transform: translateY(0);
 	}
 }
-header {
+nav {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	text-align: center;
 	z-index: 10;
-	-webkit-animation-name: dropHeader;
-	animation-name: dropHeader;
+	-webkit-animation-name: dropnav;
+	animation-name: dropnav;
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease;
@@ -45,7 +45,7 @@ header {
 	-webkit-animation-duration: 0.75s;
 	animation-duration: 0.75s;
 }
-header ul {
+nav ul {
 	display: inline-block;
 	background: #fff;
 	text-align: center;
@@ -54,30 +54,30 @@ header ul {
 	border-bottom-right-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
-header li {
+nav li {
 	display: inline-block;
 }
-header span {
+nav span {
 	display: block;
 	color: #3498db;
 	padding: 10px;
 	text-transform: capitalize;
 	cursor: pointer;
 }
-header span:hover {
+nav span:hover {
 	color: #217dbb;
 	text-decoration: none;
 	background: #eee;
 	border-radius: 4px;
 }
-header span:focus {
+nav span:focus {
 	color: #3498db;
 	text-decoration: none;
 }
-header.active {
+nav.active {
 	display: block;
 }
-header.sticky {
+nav.sticky {
 	position: fixed;
 	z-index: 999;
 }
@@ -109,14 +109,14 @@ header.sticky {
 	color: #3498db;
 }
 #mobile-menu-close span {
-	font-size: 0.5em;
+	font-size: 1em;
 	text-transform: uppercase;
 }
 #mobile-menu-close i {
 	vertical-align: middle;
 }
-footer {
-	padding: 50px 0;
+.footer {
+	padding: 50px 80px;
 }
 .copyright {
 	padding-top: 20px;
@@ -318,7 +318,7 @@ footer {
 	color: #74808a;
 	margin: 0;
 }
-#about .container .row:first-child {
+#about.container .row:first-child {
 	text-align: center;
 }
 .about-card img {
@@ -598,7 +598,6 @@ footer {
 .optional-section {
 	background: #3498db;
 	color: white;
-	padding: 50px 15px;
 	border-top: 1px solid #dcd9d9;
 }
 .optional-section-block {
@@ -679,7 +678,7 @@ footer {
 	}
 }
 @media only screen and (max-width: 768px) {
-	header {
+	nav {
 		position: fixed;
 		display: none;
 		z-index: 999;
@@ -741,7 +740,7 @@ footer {
 	.more-projects {
 		transform: none;
 	}
-	footer {
+	.footer {
 		text-align: center;
 	}
 	.social {
