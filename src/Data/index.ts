@@ -15,7 +15,7 @@ export const MyInfo: Info = {
 	image: "images/love.jpg",
 	summary:
 		"An enthusiastic fresher with highly motivated learning and problem-solving skills having a Bachelor of Engineering degree in Computer Science and Engineering. Eager to learn new technologies and methodologies. Always willing to innovate new things that can improve the existing technology. Foreseeing a career in Front End Development. Love using different technologies for the tasks. Always keen to learn new technology and adapt to different environments.",
-	resume: "https://drive.google.com/file/d/19OquP_ZGM_lM-E_Z_X20vDUYgON73HOZ/view?usp=sharing",
+	resume: "https://drive.google.com/file/d/1mD0zCcjMrEAX_xJkbGRHcsk_IWfReNFA/view?usp=sharing",
 	phone: "9855941774",
 	email: "slovepreet796@gmail.com",
 	website: "lovepreet.ml",
@@ -27,7 +27,7 @@ export const ExperienceList: Experience[] = [
 	{
 		date: "September 2019 – PRESENT",
 		name: "Accenture",
-		title: "Associate Software Engineer",
+		title: "Software Developer Analyst",
 		link: "https://www.accenture.com/",
 		description:
 			"Served as a friendly, hardworking, and punctual employee. Organized and prioritized work to complete assignments in a timely, efficient manner. Trained in Java programming practices. Delivering at client’s expectations and needs. Worked well independently and on a team to solve problems",
@@ -67,14 +67,14 @@ export const EducationList: Education[] = [
 
 //Skills
 export const SkillsList: Skill[] = [
-	{ name: "Javascript", value: 60 },
-	{ name: "Typescript", value: 40 },
-	{ name: "React", value: 40 },
+	{ name: "Javascript", value: 40 },
+	{ name: "Typescript", value: 30 },
+	{ name: "React", value: 30 },
 	{ name: "Angular", value: 30 },
-	{ name: "Python", value: 50 },
+	{ name: "Python", value: 40 },
 	{ name: "Java", value: 30 },
-	{ name: "HTML", value: 70 },
-	{ name: "CSS", value: 70 },
+	{ name: "HTML", value: 60 },
+	{ name: "CSS", value: 60 },
 ];
 
 //Projects section
