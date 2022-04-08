@@ -2,26 +2,24 @@ import React from "react";
 
 type Props = { educationList: Education[] };
 
-const Education: React.FC<Props> = (props: Props) => {
-	const edList = props.educationList;
+const Education = (props: Props) => {
+	const educationList = props.educationList;
 	return (
-		<>
-			<div id="education">
-				<h2 className="heading">Education</h2>
-				{edList.map((education, index) => {
-					return (
-						<div key={index}>
-							<div className="education-block">
-								<h3>{education.universityName}</h3>
-								<span>{education.period}</span>
-								<h4>{education.degree}</h4>
-								<p>{education.description}</p>
-							</div>
+		<section id="education">
+			<h2 className="heading">Education</h2>
+			{educationList.map((education, index) => {
+				return (
+					<div key={index}>
+						<div className="education-block">
+							<h3>{education.universityName}</h3>
+							<span>{education.period}</span>
+							<h4>{education.degree}</h4>
+							<p>{education.description}</p>
 						</div>
-					);
-				})}
-			</div>
-		</>
+					</div>
+				);
+			})}
+		</section>
 	);
 };
 

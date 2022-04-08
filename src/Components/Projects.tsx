@@ -4,13 +4,13 @@ import ListItem from "./Sub-Components/project-list";
 
 type Props = { projectList: Project[] };
 
-const Projects: React.FC<Props> = (props: Props) => {
+const Projects = (props: Props) => {
 	const num = 2;
 	const [projectList, setProjectList] = useState(props.projectList.slice(0, num));
 	return (
-		<div id="projects" className="background-alt">
-			<h2 className="heading">Projects</h2>
+		<section id="projects" className="background-alt">
 			<Container>
+				<h2 className="heading">Projects</h2>
 				<Row>
 					{projectList.map((project, index) => (
 						<ListItem project={project} key={index} />
@@ -28,7 +28,7 @@ const Projects: React.FC<Props> = (props: Props) => {
 					</Col>
 				</Row>
 			</Container>
-		</div>
+		</section>
 	);
 };
 

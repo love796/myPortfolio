@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 type Props = { linksArr: string[] };
 
-const Header: React.FC<Props> = (props: Props) => {
+const Header = (props: Props) => {
 	const linksArr = props.linksArr;
 	const [isBodyActive, setIsBodyActive] = useState(false);
 	const toggleMenu = () => setIsBodyActive(!isBodyActive);
@@ -18,9 +18,11 @@ const Header: React.FC<Props> = (props: Props) => {
 			<div id="mobile-menu-open" className="shadow-large" onClick={toggleMenu}>
 				<FontAwesomeIcon icon={faBars} />
 			</div>
-			<header className={isBodyActive ? "active" : ""}>
+			<nav className={isBodyActive ? "active" : ""}>
 				<div id="mobile-menu-close" onClick={toggleMenu}>
-					<span>Close</span> <i className="fa fa-times" aria-hidden="true"></i>
+					<span>
+						<FontAwesomeIcon icon={faTimes} />
+					</span>
 				</div>
 				<ul id="menu" className="shadow">
 					{linksArr.map((link, index) => {
@@ -31,7 +33,7 @@ const Header: React.FC<Props> = (props: Props) => {
 						);
 					})}
 				</ul>
-			</header>
+			</nav>
 		</>
 	);
 };

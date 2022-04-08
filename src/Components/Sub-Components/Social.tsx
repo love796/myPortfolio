@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn, faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const Social: React.FC = () => {
+const Social = () => {
 	return (
 		<Row>
 			<Col lg className="social">
