@@ -9,9 +9,16 @@ const ListItem = (props: Props) => {
 			<div className="project-info">
 				<h3>{project.name}</h3>
 				<p>
-					{project.description} <br />
-					<strong>Assigned Role: </strong>
-					{project.role}
+					{project.description.length <= 270 && project.description}
+					{project.description.length > 270 &&
+						project.description.substring(0, 400) + "..."}
+					<br />
+					{project.role && (
+						<>
+							<strong>Assigned Role: </strong>
+							{project.role + ":"} <br /> {project.roleDescription}
+						</>
+					)}
 				</p>
 				{project.link && (
 					<a href={project.link} target="_blank" rel="noreferrer">
