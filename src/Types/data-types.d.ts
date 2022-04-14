@@ -33,6 +33,7 @@ type Skill = {
 type Project = {
 	name: string;
 	description: string;
-	role: string;
+	role?: string;
+	roleDescription?: string;
 	link?: string;
 };
