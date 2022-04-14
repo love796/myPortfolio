@@ -21,7 +21,7 @@ const ListItem = (props: Props) => {
 								{experience.name}
 							</a>
 						</h4>
-						<p>{experience.description}</p>
+						<p dangerouslySetInnerHTML={{ __html: experience.description }}></p>
 					</div>
 				</div>
 			</div>
